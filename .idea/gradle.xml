@@ -6,6 +6,14 @@
         <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="gradleHome" value="$APPLICATION_HOME_DIR$/gradle/gradle-4.10.1" />
+        <option name="modules">
+          <set>
+            <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/internal_base/base" />
+            <option value="$PROJECT_DIR$/media/media" />
+          </set>
+        </option>
         <option name="resolveModulePerSourceSet" value="false" />
       </GradleProjectSettings>
       <GradleProjectSettings>

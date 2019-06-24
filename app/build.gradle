@@ -10,7 +10,7 @@ android {
     }
     compileSdkVersion version.compileSdkVersion
     defaultConfig {
-        applicationId "com.jay.tiktok"
+        applicationId "com.jay.mediainfo"
         minSdkVersion version.minSdkVersion
         targetSdkVersion version.targetSdkVersion
         versionCode version.versionCode
@@ -34,7 +34,8 @@ dependencies {
     testImplementation dep.junit
     androidTestImplementation dep.runner
     androidTestImplementation dep.espresso
-    implementation project(':internal_base/base')
     implementation dep.butterknife
     kapt dep.butterknifecompiler
+    implementation project(path: ':media/media')
+    implementation project(path: ':internal_base/base')
 }
