@@ -28,12 +28,13 @@ android {
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation dep.kotlin
-    implementation dep.appcompat
-    implementation dep.core
-    implementation dep.constraintlayout
-    testImplementation dep.junit
+    implementation 'androidx.appcompat:appcompat:1.1.0-beta01'
+    implementation 'androidx.core:core-ktx:1.2.0-alpha02'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.0-beta2'
+    testImplementation 'junit:junit:4.13-beta-3'
     androidTestImplementation dep.runner
-    androidTestImplementation dep.espresso
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0-alpha01'
+    implementation 'com.android.support:recyclerview-v7:28.0.0'
     implementation dep.butterknife
     kapt dep.butterknifecompiler
     implementation project(path: ':media/media')

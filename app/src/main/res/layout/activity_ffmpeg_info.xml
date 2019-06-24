@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    
+    <Button
+            android:id="@+id/compileInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ffmpeg编译信息"/>
+    
+    <Button
+            android:id="@+id/formatInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="封装格式信息"/>
+    
+    <Button
+            android:id="@+id/codecInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="编解码信息"/>
+    
+    <Button
+            android:id="@+id/filterInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="过滤器信息"/>
+    
+    <Button
+            android:id="@+id/protocolInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="协议信息"/>
+    
+    <Button
+            android:id="@+id/configurationInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="配置信息"/>
+    
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+            
+            <TextView
+                    android:id="@+id/contentView"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"/>
+        
+        </LinearLayout>
+    
+    </ScrollView>
+
+
+</LinearLayout>

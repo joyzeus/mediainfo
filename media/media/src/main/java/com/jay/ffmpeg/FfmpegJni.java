@@ -18,4 +18,16 @@ public class FfmpegJni {
     public static native void init();
 
     public static native String avCodecConfiguration();
+
+    public static native String avFormatInfo();
+
+    public static native String avCodecInfo();
+
+    public static native String avFilterInfo();
+
+    public static native String avProtocolInfo();
+
+    public static native String avConfigurationInfo();
+
+    public static native String ffmpegVersion();
 }

@@ -3,7 +3,6 @@ apply plugin: 'kotlin-android-extensions'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-kapt'
 apply plugin: 'com.android.library'
-apply plugin: 'com.jakewharton.butterknife'
 
 android {
     compileSdkVersion 28
@@ -29,13 +28,11 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
-    implementation dep.appcompat
-    testImplementation dep.junit
+    implementation 'androidx.appcompat:appcompat:1.1.0-beta01'
+    testImplementation 'junit:junit:4.13-beta-3'
     androidTestImplementation dep.runner
-    androidTestImplementation dep.espresso
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0-alpha01'
     implementation dep.kotlin
-    implementation dep.butterknife
-    kapt dep.butterknifecompiler
 }
 repositories {
     mavenCentral()
