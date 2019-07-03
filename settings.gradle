@@ -1,1 +1,1 @@
-include ':app', ':internal_base/base', ':media/media', ':music'
+include ':app', ':internal_base/base', ':media/media', ':media/music'

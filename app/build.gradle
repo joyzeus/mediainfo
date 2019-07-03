@@ -23,6 +23,10 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
     }
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
 }
 
 dependencies {
@@ -37,7 +41,7 @@ dependencies {
     implementation 'com.android.support:recyclerview-v7:28.0.0'
     implementation dep.butterknife
     kapt dep.butterknifecompiler
-    implementation project(path: ':media/media')
     implementation project(path: ':internal_base/base')
-    implementation project(path: ':music')
+    implementation project(path: ':media/media')
+    implementation project(path: ':media/music')
 }

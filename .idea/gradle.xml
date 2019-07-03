@@ -12,7 +12,7 @@
             <option value="$PROJECT_DIR$/app" />
             <option value="$PROJECT_DIR$/internal_base/base" />
             <option value="$PROJECT_DIR$/media/media" />
-            <option value="$PROJECT_DIR$/music" />
+            <option value="$PROJECT_DIR$/media/music" />
           </set>
         </option>
         <option name="resolveModulePerSourceSet" value="false" />
