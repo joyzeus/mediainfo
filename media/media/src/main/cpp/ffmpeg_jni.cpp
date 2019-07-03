@@ -109,9 +109,6 @@ JNIEXPORT jstring JNICALL
 Java_com_jay_ffmpeg_FfmpegFormat_getFileFormat(JNIEnv *env, jclass type, jstring filePath_) {
     const char *filePath = env->GetStringUTFChars(filePath_, 0);
 
-// TODO
-
     env->ReleaseStringUTFChars(filePath_, filePath);
-
     return env->NewStringUTF("");
 }

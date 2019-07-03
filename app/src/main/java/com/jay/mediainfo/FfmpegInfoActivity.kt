@@ -17,7 +17,7 @@ import com.jay.ffmpeg.FfmpegJni
  */
 class FfmpegInfoActivity() : BaseActivity(), View.OnClickListener {
 
-    var contentView: TextView? = null;
+    var contentView: TextView? = null
 
     override fun onClick(v: View?) {
         when (v!!.id) {
